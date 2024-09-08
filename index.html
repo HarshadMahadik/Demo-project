@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Design Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <!-- Menu Icon -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <!-- Links container -->
+        <div class="nav-links">
+            <a href="#" onclick="showTab('about-me')">About Me</a>
+            <a href="#" onclick="showTab('experiences')">Experiences</a>
+            <a href="#" onclick="showTab('recommended')">Recommended</a>
+            <a href="#" onclick="showTab('gallery')">Gallery</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="about-me" class="tab-content">
+            <h2>About Me</h2>
+            <img src="Shinkai02.jpg" alt="Profile Picture">
+            <p>Hi, I'm <strong>Jane Doe</strong>, a passionate web developer based in <strong>San Francisco, California</strong>. I have always had a fascination for technology, which led me to pursue a career in web development. Over the years, I have worked on various projects, both personal and professional, that have allowed me to hone my skills and stay updated with the latest trends in web technologies.</p>
+            
+            <p>I graduated from <strong>XYZ University</strong> in 2019 with a Bachelor's degree in <strong>Computer Science</strong>. Prior to that, I completed my high school education at <strong>ABC High School</strong>, where my interest in programming and web design first took root. Throughout my academic years, I focused on developing a strong foundation in coding and problem-solving, which has been invaluable in my professional career.</p>
+            
+            <p>With over <strong>five years of experience</strong> in the industry, I specialize in front-end technologies such as <strong>HTML, CSS, JavaScript</strong>, and <strong>React</strong>, while also possessing a solid understanding of back-end development with <strong>Node.js</strong> and <strong>MongoDB</strong>. I have a keen eye for design and love building user-friendly, responsive websites. My expertise also extends to using <strong>Git</strong> for version control, and I am constantly learning new tools and frameworks to expand my knowledge.</p>
+        </div>
+        
+        
+        
+        
+
+        <div id="experiences" class="tab-content">
+            <h2>Experiences</h2>
+            
+            <h3>Work Experience</h3>
+            <ul>
+                <li><strong>Web Developer at XYZ Corp (2021-Present)</strong><br>
+                    Worked on multiple high-traffic web applications, improving performance and implementing modern web technologies.
+                </li>
+                <li><strong>Freelance Designer (2019-2021)</strong><br>
+                    Designed and developed websites for small businesses and startups, focusing on user experience and responsive design.
+                </li>
+                <li><strong>Intern at ABC Inc. (2018-2019)</strong><br>
+                    Gained hands-on experience in full-stack development, working closely with the development team on client projects.
+                </li>
+            </ul>
+            
+            <h3>Technical Skills</h3>
+            <p>
+                Proficient in a variety of programming languages and tools, including:
+            </p>
+            <ul>
+                <li><strong>HTML, CSS, JavaScript:</strong> Advanced knowledge in front-end web development, creating responsive and dynamic user interfaces.</li>
+                <li><strong>React:</strong> Expertise in building scalable and reusable components for single-page applications.</li>
+                <li><strong>Node.js & Express:</strong> Experience in creating back-end services and APIs using JavaScript runtime environments.</li>
+                <li><strong>MongoDB:</strong> Familiarity with NoSQL databases, used in conjunction with Node.js for full-stack development.</li>
+                <li><strong>Python:</strong> Utilized for scripting, data analysis, and creating web scraping tools.</li>
+            </ul>
+        
+            <h3>Projects</h3>
+            <p>Here are some of the projects I've worked on:</p>
+            <div class="projects">
+                <div class="project-item">
+                    <img src="news.png" alt="Project 1 Screenshot">
+                    <p><strong>News Website</strong> - News websites offer real-time updates, accessible from various devices, providing
+                        diverse perspectives and in-depth analyses. They feature multimedia content, offer global coverage, and allow personalized
+                        experiences.</p>
+
+                </div>
+                <div class="project-item">
+                    <img src="manga1.png" alt="Project 2 Screenshot">
+                    <p><strong>Comic Website</strong> - A comic website provides global access to a diverse range of comics, allowing readers from anywhere in the world to discover and enjoy content without geographical limitations.
+                        </p>
+                </div>
+                <div class="project-item">
+                    <img src="manga2.png" alt="Project 3 Screenshot">
+                    <p><strong>Comic Website</strong> - Comic websites offer convenience by enabling readers to access comics anytime,anywhere, using various devices such as computers, tablets, and smartphones.This flexibility allows readers to enjoy their favorite comics on-the-go, during commutes, or from the comfort of their homes, without the need to visit physical stores</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="recommended" class="tab-content">
+            <h2>Recommended</h2>
+
+            <!-- Books section with "Books" heading -->
+            <h2 class="books-heading">Books</h2> <!-- Books text above Clean Code box -->
+    
+            <!-- Clean Code Book -->
+            <div class="recommendation-box">
+                <img src="clean code.jpeg" alt="Clean Code Book">
+                <div class="recommendation-info">
+                    <h4>Clean Code by Robert C. Martin</h4>
+                    <p>A must-read for software developers looking to write maintainable and scalable code.</p>
+                </div>
+            </div>
+        
+            <!-- JavaScript Course -->
+            <h2 class="course-heading">Courses</h2>
+            <div class="recommendation-box">
+                <img src="js course.jpeg" alt="Modern JavaScript Course">
+                <div class="recommendation-info">
+                    <h4>Modern JavaScript from the Beginning (Udemy)</h4>
+                    <p>This course helped solidify my knowledge of JavaScript and improve my front-end coding skills.</p>
+                </div>
+            </div>
+        
+            <!-- Visual Studio Code -->
+            <h2 class="software-heading">Software</h2>
+            <div class="recommendation-box">
+                <img src="vs code.png" alt="Visual Studio Code">
+                <div class="recommendation-info">
+                    <h4>Visual Studio Code</h4>
+                    <p>My go-to code editor for most of my development projects because of its versatility and robust plugin ecosystem.</p>
+                </div>
+            </div>
+        
+            <!-- Syntax Podcast -->
+            <h2 class="Poscast-heading">Podcast</h2>
+            <div class="recommendation-box">
+                <img src="Syntax - Web Development Podcast.jpg" alt="Syntax Podcast">
+                <div class="recommendation-info">
+                    <h4>Syntax – Tasty Web Development Treats</h4>
+                    <p>A great podcast hosted by two experienced developers discussing modern web development practices, tools, and tips.</p>
+                </div>
+            </div>
+        
+            <!-- The Social Dilemma -->
+            <h2 class="Social-heading">Movie</h2>
+            <div class="recommendation-box">
+                <img src="dilema movie.jpeg" alt="The Social Dilemma">
+                <div class="recommendation-info">
+                    <h4>The Social Dilemma</h4>
+                    <p>A fascinating look at the impact of social media and how it shapes our world today.</p>
+                </div>
+            </div>
+        
+            <!-- Grace Hopper -->
+            <h2 class="Inspiration-heading">Inspiration</h2>
+            <div class="recommendation-box">
+                <img src="grace hoper.jpeg" alt="Grace Hopper">
+                <div class="recommendation-info">
+                    <h4>Grace Hopper</h4>
+                    <p>An early computer scientist and pioneer in programming, who helped develop the first compiler.</p>
+                </div>
+            </div>
+        
+            <!-- CSS Tricks Blog -->
+            <h2 class="Blogs-heading">Blogs</h2>
+            <div class="recommendation-box">
+                <img src="css tricks.jpeg" alt="CSS Tricks Blog">
+                <div class="recommendation-info">
+                    <h4>CSS Tricks</h4>
+                    <p>My go-to resource for learning new CSS techniques and keeping up with front-end web development trends.</p>
+                </div>
+            </div>
+        </div>
+        
+        
+
+    <div id="gallery" class="tab-content">
+        <h2>Gallery</h2>
+        <!-- Add Images button -->
+        <div class="add-image-container">
+            <label for="file-upload" class="add-image-button">Add Images</label>
+            <input type="file" id="file-upload" accept="image/*" style="display: none;" onchange="handleFileUpload(event)">
+        </div>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                
+                <img src="c-programming-language-classmate-in-a-book-2021-release.jpg" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="clean code.jpeg" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="python-coding-original-imagjvyycwyg7s7n.webp" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="think life like a programmer.jpg" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="hackers.jpg" alt="Gallery Image 3">
+            </div>
+            <!-- Additional gallery items can go here -->
+        </div>
+    </div>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+</body>
+</html>

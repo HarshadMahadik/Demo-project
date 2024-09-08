@@ -1,0 +1,339 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    display: flex;
+}
+
+.navbar {
+    width: 60px; /* Default narrow width */
+    background-color: #000000;
+    color: white;
+    position: fixed;
+    height: 100%;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: width 0.3s ease; /* Smooth transition when expanding */
+}
+
+/* Menu Icon */
+.menu-icon {
+    color: white;
+    font-size: 30px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+/* Initially hide the links */
+.nav-links {
+    display: none;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.content {
+    margin-left: 60px; /* Default margin when navbar is narrow */
+    padding: 20px;
+    width: calc(100% - 60px);
+    box-sizing: border-box;
+    transition: margin-left 0.3s ease;
+}
+
+#about-me {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+/* Increase the size of the h2 heading in the About Me section */
+.tab-content h2 {
+    font-size: 36px; /* Adjust the size as needed */
+    font-weight: bold; /* Make it bold for emphasis */
+    margin-bottom: 20px; /* Add some space below the heading */
+    color: white; /* Ensure the color matches the design */
+}
+
+
+
+/* Circular profile picture */
+/* Styling for the tab content with white font color */
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #333; /* Dark background for contrast with white text */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    margin: 20px;
+    box-sizing: border-box;
+    border: 2px solid #333;
+    color: white; /* White text */
+    display: flex; /* Flexbox layout for image and text alignment */
+    align-items: flex-start; /* Align the image and text from the top */
+}
+
+/* Circular profile picture aligned to the left */
+.tab-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff; /* White border around the image */
+    margin-right: 20px; /* Space between the image and the text */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+/* Styling for the text to start next to the image */
+.tab-content div {
+    flex: 1; /* Allow the text content to take the remaining space */
+}
+
+/* Styling for the paragraphs */
+.tab-content p {
+    margin: 0; /* Remove default margin */
+    line-height: 1.5; /* Adjust line height for readability */
+}
+
+/* Styling for the project images and descriptions */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between project items */
+}
+
+.project-item {
+    flex: 1 1 calc(33.333% - 20px); /* Each project takes up one-third of the row */
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.recommendation {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styling for the Books heading */
+.books-heading {
+    font-size: 1.8em; /* Adjust as needed */
+    text-align: left; /* Align left */
+    margin-bottom: 15px; /* Add space below the heading */
+    color: #333; /* Color for the Books text */
+    padding-left: 15px; /* Ensure spacing similar to the recommendation box */
+    background-color: #1c1b1b;
+    border-radius: 10px;
+}
+
+.course-heading {
+    font-size: 1.8em; /* Adjust as needed */
+    text-align: left; /* Align left */
+    margin-bottom: 15px; /* Add space below the heading */
+    color: #333; /* Color for the Books text */
+    padding-left: 15px; /* Ensure spacing similar to the recommendation box */
+    background-color: #1c1b1b;
+    border-radius: 5px;
+}
+.software-heading{
+    font-size: 1.8em; /* Adjust as needed */
+    text-align: left; /* Align left */
+    margin-bottom: 15px; /* Add space below the heading */
+    color: #333; /* Color for the Books text */
+    padding-left: 15px; /* Ensure spacing similar to the recommendation box */
+    background-color: #1c1b1b;
+    border-radius: 5px;
+}
+
+.Poscast-heading{
+    font-size: 1.8em; /* Adjust as needed */
+    text-align: left; /* Align left */
+    margin-bottom: 15px; /* Add space below the heading */
+    color: #333; /* Color for the Books text */
+    padding-left: 15px; /* Ensure spacing similar to the recommendation box */
+    background-color: #1c1b1b;
+    border-radius: 5px;
+}
+.Social-heading{
+    font-size: 1.8em; /* Adjust as needed */
+    text-align: left; /* Align left */
+    margin-bottom: 15px; /* Add space below the heading */
+    color: #333; /* Color for the Books text */
+    padding-left: 15px; /* Ensure spacing similar to the recommendation box */
+    background-color: #1c1b1b;
+    border-radius: 5px;
+}
+.Inspiration-heading{
+    font-size: 1.8em; /* Adjust as needed */
+    text-align: left; /* Align left */
+    margin-bottom: 15px; /* Add space below the heading */
+    color: #333; /* Color for the Books text */
+    padding-left: 15px; /* Ensure spacing similar to the recommendation box */
+    background-color: #1c1b1b;
+    border-radius: 5px;
+}
+.Blogs-heading{
+    font-size: 1.8em; /* Adjust as needed */
+    text-align: left; /* Align left */
+    margin-bottom: 15px; /* Add space below the heading */
+    color: #333; /* Color for the Books text */
+    padding-left: 15px; /* Ensure spacing similar to the recommendation box */
+    background-color: #1c1b1b;
+    border-radius: 5px;
+}
+
+/* Flexbox layout for all recommendation boxes */
+.recommendation-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling for all recommendations */
+.recommendation-box img {
+    max-width: 150px; /* Control the image width */
+    height: auto; /* Keep the original aspect ratio */
+    margin-right: 20px; /* Space between the image and text */
+    border-radius: 0; /* Keep images non-circular */
+    object-fit: cover; /* Ensure the image fits within the given width */
+}
+
+/* Text section for all recommendations */
+.recommendation-info {
+    max-width: 500px; /* Adjust as needed for the layout */
+}
+
+.recommendation-info h4 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.recommendation-info p {
+    margin: 0;
+}
+
+/* Gallery section styling */
+.gallery-item {
+    width: 226px; /* Set the exact width */
+    height: 339px; /* Set the exact height */
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px; /* Keep the rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
+    display: block;
+}
+
+/* Gallery section styling */
+/* Adjust the gallery images to have similar behavior to .manga-box-img */
+.gallery-item img {
+    width: 100%; /* Ensure the image fills the width of the container */
+    height: 100%; /* Ensure the image fills the height of the container */
+    object-fit: cover; /* Crop the image to maintain aspect ratio while covering the container */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Ensure the gallery layout allows horizontal scrolling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Create 5 equal columns */
+    grid-gap: 10px; /* Add space between the images */
+    margin-top: 20px;
+    justify-items: center; /* Center the images horizontally */
+}
+
+/* Container for the Add Images button */
+.add-image-container {
+    position: absolute;
+    top: 110px;
+    right: 80px;
+}
+
+/* Styling for the Add Images button */
+.add-image-button {
+    background-color: #424242;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 2px solid #424242;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Add shadow */
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.3); /* Horizontal, Vertical, Blur, Spread, Color */
+    
+}
+
+.add-image-button:hover {
+    background-color: #222222;
+    border-color: #60605e; /* Change the border color on hover */
+    /* Enhance the shadow on hover */
+    box-shadow: 0px 0px 10px 10px #424242(0, 0, 0, 0.4);
+}
+
+/* Styling for Swiper's wrapper */
+/*.swiper-container {
+    width: 100%;
+    padding-bottom: 20px; /* Space for navigation buttons 
+}
+
+/* Navigation button styling */
+/*.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}*/
+
+
+
+
+/* When the menu is open, show the links and expand the navbar */
+.navbar.expanded {
+    width: 200px; /* Expanded width */
+}
+
+.content.expanded {
+    margin-left: 200px; /* Adjust content margin when navbar is expanded */
+}
+
+/* Show the links when the menu is expanded */
+.nav-links.show {
+    display: block;
+}
+
